@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Projeto Efraim - Contatos</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/navFooterStyle.css" rel="stylesheet">
+  <!-- Contatos CSS File -->
+  <link href="assets/css/contatos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-start">
+			<h1 class="logo mr-auto"><a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></h1>
+      <!-- nav-menu -->
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="bazar.html">Bazar</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li class="active"><a href="contatos.html">Contatos</a></li>
+        </ul>
+      </nav>
+      <!-- End nav-menu -->
+    </div>
+  </header>
+  <!-- End Header -->
+
+ <!-- ======= Hero Section ======= -->
+ <section id="hero" class="d-flex align-items-center">
+  <div class="container">
+    <h1>Contatos</h1>
+    <h2>Fique à vontade para contatar-nos</h2>
+  </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+  
+    <div class="container">
+
+      <div class="container-fluid">
+          <div class="section-title">
+              <h2>Fale Conosco</h1>
+              <p>Envie uma mensagem:</p>
+          </div>
+      </div> <!--end container-fluid-->
+
+        <div class="col-lg-12">
+
+          <form action="forms/contactform.php" method="post" role="form" class="php-email-form">
+          
+            <div class="form-row">
+
+              <div class="col-md-6 coluna-esquerda"> <!-- coluna da esquerda-->
+                
+                <div class="form-group">
+                    <label for="nome" class="col-form-label">Nome</label>
+                    <input type="text" name="name" class="form-control formulario-estilo" id="name" placeholder="Seu nome" data-rule="minlen:4" data-msg="Porfavor, insira pelo menos 4 caracteres" />
+                    <div class="validate"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="col-form-label">E-mail</label>
+                    <input type="email" class="form-control formulario-estilo" name="email" id="email" placeholder="e-mail_que_mais_usa@exemplo.com.br" data-rule="email" data-msg="Porfavor, insira um e-mail válido" />
+                    <div class="validate"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="tel" class="col-form-label">Telefone</label>
+                  <input type="tel" class="form-control formulario-estilo" name="tel" id="tel" pattern="\([0-9]{2}\)[\s][0-9]{4,5}-[0-9]{4}" placeholder="(99) 99999 - 9999" data-rule="tel" data-msg="Porfavor, insira um telefone válido" />
+                  <div class="validate"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="col-form-label">Assunto</label>
+                  <select class="form-control formulario-estilo" name="subject" id="subject" data-rule="required" data-msg="Porfavor, selecione um assunto">
+                      <option value=""></option>
+                      <option value="Dúvidas sobre o Projeto Efraim">Dúvidas sobre o Projeto Efraim</option>
+                      <option value="Informações Gerais">Informações Gerais</option>
+                      <option value="Outros">Outros</option>
+                  </select>
+                  <div class="validate"></div>
+                </div>
+
+              </div> <!--fim da coluna da esquerda -->
+
+              <div class="col-md-6 coluna-direita"> <!-- coluna da direita-->
+
+                <div class="form-group">
+                    <label for="mensagem" class="col-form-label">Mensagem</label>
+                    <textarea class="form-control formulario-estilo" name="message" rows="10" data-rule="required" data-msg="Porfavor, escreva uma mensagem" placeholder="Mensagem"></textarea>
+                    <div class="validate"></div>
+                </div>
+
+                <div class="form-group">
+                    <!--<input style="margin-top: 36px" type="submit" id="botao-enviar-mensagem" class="form-control botao-enviar-mensagem" value="Enviar mensagem"/> -->            
+                    <button type="submit" name="submit" id="botao-enviar-mensagem" class="text-center form-control botao-enviar-mensagem">Enviar mensagem</button>
+                </div>
+
+              </div><!--fim da coluna da direita -->
+
+           </div> <!-- fim da linha do form - form-row-->
+
+           <!--
+            <div class="mb-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            --> 
+          </form>
+
+        </div> <!-- end col-lg-12-->
+
+
+        <div class="div-mapa-efraim">
+          <iframe class="mapa-efraim" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.17060800361!2d-43.43811638540312!3d-22.79614133966252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9966d20eda42af%3A0xdacd9e5978d793a4!2sAv.%20Uni%C3%A3o%2C%2096%20-%20Santa%20Terezinha%2C%20Mesquita%20-%20RJ%2C%2026554-000!5e0!3m2!1spt-BR!2sbr!4v1606257717174!5m2!1spt-BR!2sbr" frameborder="0" aria-hidden="false" tabindex="0" allowfullscreen></iframe>
+      </div>
+      
+    </div><!--end container-->
+
+    
+
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+
+  <!-- ======= Footer ======= -->
+  <!--<div style="min-height: 800px">
+  </div> -->
+  <footer id="footer">
+    <div class="footer-top container">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <h1 class="logo-footer"><a href="index.html" class="logo"><img src="assets/img/logo-branca.png" alt="" class="img-fluid"></a></h1>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div id="rodape" clas="container col-12 ">
+              <p clas="info-footer">
+                Av. União, 96, Santa Terezinha 
+                Mesquita - RJ, 26554-000  <br>
+                <strong>Telefone:</strong> +55 (24) 9 8120-3075<br>
+                <strong>E-mail:</strong> <a href="mailto:lidia@projetoefraim.com.br">Lídia - Fundadora</a><br>
+              </p>
+            </div>
+            <div class="social-links d-flex justify-content-between">
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+						<div class="designed">
+              <a href="./desenvolvedoras/index.html"><p class="designer-c my-2 text-center">Desenvolvido com dedicação pelas Mentees</a> <a class="email_cg" href="mailto:contato@cloudgirls.com.b?subjetc=Assunto">contato@cloudgirls.com.br</a>
+							</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/jquery/jquery.mask.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
