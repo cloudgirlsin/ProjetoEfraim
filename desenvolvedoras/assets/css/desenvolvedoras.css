@@ -1,0 +1,178 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    position: relative;
+    height: 90vh;
+  }
+  
+  /*
+  #hero {
+    width: 100%;
+    height: 90vh;
+    background: url("../img/contato-bg.png");
+    background-position: top;
+    background-size: cover;
+    filter: brightness(50%);
+  }*/
+  
+  #hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background: url("../img/contato-bg.png");
+    background-position: top;
+    background-size: cover;
+    filter: brightness(50%);
+  }
+  
+  #hero .container {
+    position: relative;
+  }
+  
+  #hero h1 {
+    margin: 1.5em 0 1em;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 56px;
+    color: white;
+  }
+  
+  #hero h2 {
+    color: white;
+    margin: 1em 0;
+    font-size: 42px;
+    font-style: italic;
+  }
+  
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    #hero {
+      margin-bottom: 0;
+      height: 100vh;
+    }
+    #hero .container {
+      padding-bottom: 63px;
+    }
+    #hero h1 {
+      font-size: 48px;
+      line-height: 36px;
+    }
+    #hero h2 {
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-height: 500px) {
+    #hero {
+      height: auto;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background-color: #f1f7fd;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #2c4964;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+  /* bloco do título */
+  .container .section-title{
+    /*margin-left: 45px;*/
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .container .section-title h2{
+    color: #77CC66; 
+    font-size:32px;
+    padding-bottom: 0;
+  }
+
+/*--------------------------------------------------------------
+# Trainers
+--------------------------------------------------------------*/
+
+.trainers .member {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #eef0ef;
+  }
+  
+  .trainers .member img {
+    margin: -1px -1px 30px -1px;
+  }
+  
+  .trainers .member .member-content {
+    padding: 0 20px 30px 20px;
+  }
+  
+  .trainers .member h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+  }
+  
+  .trainers .member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+  }
+  
+  .trainers .member p {
+    padding-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #aaaaaa;
+  }
+  
+  .trainers .member .social {
+    margin-top: 15px;
+  }
+  
+  .trainers .member .social a {
+    color: #7e9486;
+    transition: 0.3s;
+  }
+  
+  .trainers .member .social a:hover {
+    color: #4f4f8f;
+  }
+  
+  .trainers .member .social i {
+    font-size: 25px;
+    margin: 0 2px;
+  }
+  
