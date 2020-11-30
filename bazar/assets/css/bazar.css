@@ -1,0 +1,77 @@
+.jumbotron-with-background{
+    background-image: url("../img/bazar/agasalhos.jpg");
+    -webkit-filter: grayscale(70%);
+       -moz-filter: grayscale(80%);
+         -o-filter: grayscale(80%);
+        -ms-filter: grayscale(80%);
+            filter: grayscale(80%); 
+    opacity: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    padding-top: 12em;
+}
+
+.title-jumbotron{
+    font-weight: bolder; 
+    padding: 1em 0 1em 0;
+}
+
+.horarios{
+    padding: 2em 0;
+}
+
+.horario-h1{
+    color: 	#32CD32;
+}
+
+.como-doar{
+    padding: 2em 0;
+}
+
+.como-doar-h1{
+    color: #DB7093;
+}
+
+.o-que-precisamos{
+    padding: 40px 0;
+}
+
+.carousel{
+    margin: 20px 0px;
+
+    width: 100%;
+}
+
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+  .carousel-indicators .active{
+    background-color: #FF1493;
+}
+
+h6{
+    font-style: oblique;
+}
+.doacoes{
+    padding-bottom: 1em;
+    align-self: end;
+    align-items: end;
+}
+
+.materiais{
+    vertical-align: text-bottom;
+    align-self: end;
+    align-items: end;
+}
+
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
