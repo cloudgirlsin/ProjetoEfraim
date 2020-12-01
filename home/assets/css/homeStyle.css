@@ -262,9 +262,6 @@ section {
   text-align: left;
 }
 
-
-
-
 @media (max-width: 992px) {
   .sobre {
     padding: 10px 0;
@@ -346,7 +343,7 @@ section {
   text-align: left;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 992px) {
   .galeria-carousel .section-title h2 {
     text-align: center;
     text-decoration: underline;
@@ -466,142 +463,73 @@ section {
 --------------------------------------------------------------*/
 .apoio .box {
   padding: 20px;
-  background: #fff;
   text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12); */
+  box-shadow: 5px 10px 29px 0 rgba(68, 88, 144, 0.2);
   border-radius: 30px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin: 30px;
+  color: white;
 }
 
-.apoio h3 {
-  font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #05579e;
-  background: #f8f8f8;
-}
-
-.apoio h4 {
-  font-size: 36px;
-  color: #0880e8;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
-}
-
-.apoio h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.apoio h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
 .apoio p{
-  text-align: justify;
+  text-align: left;
 }
 
-.apoio ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
 
-.apoio ul li {
-  padding-bottom: 16px;
-}
-
-.apoio ul i {
-  color: #0880e8;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.apoio ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.apoio .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.apoio .btn-buy {
-  background: #0880e8;
-  display: inline-block;
-  padding: 8px 35px 10px 35px;
-  border-radius: 50px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.apoio .btn-buy:hover {
-  background: #2b99f8;
-}
-
-.apoio .featured h3 {
-  color: #fff;
-  background: #0880e8;
-}
-
-.apoio .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #0880e8;
-  color: #fff;
-}
 .apoio .section-title h2{
   color: #F2AA52;
   text-align: left;
 }
+.apoio .icon{
+  padding: 20px;
+}
 
 .apoio .box-text{
-  color: white;
-  font-size: 56px;
+  
+  font-size: 42px;
   text-transform: uppercase;
-  line-height: 50px;
+  line-height: 45px;
 }
 #meu-tempo {
   background-color: #4262FF;
+  border: #4262FF solid 1px;
 }
 #itens-gerais{
   background-color: #E15454;
+  border: #E15454 solid 1px;
 }
 #algum-valor{
   background-color: #77CC66;
+  border: #77CC66 solid 1px;
+}
+#meu-tempo:hover, #itens-gerais:hover, #algum-valor:hover{
+  background-color: #fff;
+  transition: 0.5s;
+}
+#meu-tempo:hover{
+  color: #4262FF;
+  
+}
+#itens-gerais:hover{
+  color: #E15454;
+  
+}
+#algum-valor:hover{
+  color: #77CC66;
+  
 }
 
 @media(max-width: 992px){
+  .apoio .box {
+    margin: 30px 0 0 0px;
+  }
   .apoio .section-title h2 {
     text-align: center;
     text-decoration: underline;
   }
 }
-
 
 
 
