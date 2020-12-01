@@ -6,15 +6,6 @@ body {
   color: #444444;
 }
 
-a {
-  color: #0880e8;
-}
-
-a:hover {
-  color: #2b99f8;
-  text-decoration: none;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
@@ -114,7 +105,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 80vh;
   overflow: hidden;
   position: relative;
-  background: url("../img/headerEf.png") top center;
+  background: rgba(0, 0, 0, 0.420) url("../img/headerEf.png");
+  background-blend-mode: darken;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -141,48 +133,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  padding: 10px 0;
-  overflow: hidden;
-}
+@media (max-width: 425px) {
+  #cabecalho .btn-get-started {
 
-.section-bg {
-  background-color: #f1f8ff;
-}
-
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.section-title h2 {
-  font-size: 41px;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-}
-
-.section-title p {
-  margin-bottom: 0;
-  font-size: 24px;
-}
-@media (max-width: 992px) {
-  .section-title h2 {
-    font-size: 41px;
+    display: block;
+    text-align: center;
+    font-size: 30px;   
   }
-  .section-title p {
-    margin-bottom: 0;
-    font-size: 28px;
+  #cabecalho h1 {
+    text-align: center;
   }
 }
+
+
 /*--------------------------------------------------------------
 # Icon Boxes
 --------------------------------------------------------------*/
-/*.icon-boxes {
-  padding-top: 0;
-}*/
 
 .icon-boxes .icon-box {
   padding: 20px;
@@ -194,18 +160,6 @@ section {
   text-align: center;
   margin-bottom: 20px;
 }
-
-/*.icon-boxes .icon {
-  margin: 0 auto 20px auto;
-  display: inline-block;
-  text-align: center;
-}
-
-.icon-boxes .icon i {
-  font-size: 28px;
-  line-height: 1;
-  color: #fff;
-}*/
 
 .icon-boxes img {
   margin-bottom: 20px;
@@ -236,12 +190,45 @@ section {
   background: #77CC66;
 }
 
-/*.icon-boxes .description {
-  font-size: 15px;
-  line-height: 28px;
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f1f8ff;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.section-title p {
   margin-bottom: 0;
-  color: #777777;
-}*/
+  font-size: 20px;
+}
+@media (max-width: 992px) {
+  .section-title h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .section-title p {
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Sobre Nós
@@ -272,7 +259,7 @@ section {
 }
 
 .sobre .section-title p {
-  text-align: justify;
+  text-align: left;
 }
 
 
@@ -281,6 +268,13 @@ section {
 @media (max-width: 992px) {
   .sobre {
     padding: 10px 0;
+  }
+  .sobre .section-title h2 {
+    text-align: center;
+    text-decoration: underline;
+  }
+  .sobre .section-title p {
+    text-align: center;
   }
 }
 
@@ -352,11 +346,18 @@ section {
   text-align: left;
 }
 
+@media (max-width: 425px) {
+  .galeria-carousel .section-title h2 {
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+
 /*--------------------------------------------------------------
 # Galeria
 --------------------------------------------------------------*/
 .galeria p {
-  font-size: 25px;
+  font-size: 20px;
   font-style: italic;
 }
 
@@ -593,6 +594,15 @@ section {
 #algum-valor{
   background-color: #77CC66;
 }
+
+@media(max-width: 992px){
+  .apoio .section-title h2 {
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+
+
 
 
 
