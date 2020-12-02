@@ -160,10 +160,29 @@ a:hover {
     }
   
   }
-  
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+body div.jumbotron-with-background.jumbotron-fluid{
+  background-image: url("../img/bg-capa.jpg");
+  -webkit-filter: grayscale(70%);
+     -moz-filter: grayscale(80%);
+       -o-filter: grayscale(80%);
+      -ms-filter: grayscale(80%);
+          filter: grayscale(80%); 
+  opacity: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  padding-top: 12em;
+}
+
+.text-white {
+  text-shadow: #000 2px 3px 2px !important;
+}
+
+
 .work-box-a {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
@@ -201,7 +220,7 @@ a:hover {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: ##77CC66;
+  background-color: #77CC66;
   max-width:900px;
   max-height:400px;
   width: auto;
