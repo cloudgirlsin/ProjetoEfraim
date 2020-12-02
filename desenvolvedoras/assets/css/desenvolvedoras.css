@@ -170,15 +170,15 @@
 }
 
 .dev .member .social a {
-  color: #77CC66;
+  color: #92ca92;
   transition: 0.3s;
 }
 
 .dev .member .social a:hover {
-  color: #277c16;
+  color: #44a541;
 }
 
 .dev .member .social i {
-  font-size: 30px;
+  font-size: 25px;
   margin: 0 2px;
 }
