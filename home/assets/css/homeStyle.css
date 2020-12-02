@@ -165,29 +165,112 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 
-.icon-boxes .title {
-  margin-bottom: 15px;
-  font-size: 36px;
-}
-
-.icon-boxes .title {
+.icon-box h4 {
   color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 28px;
 }
 
-.projetos {
+#projetos {
   background: #4262ff;
 }
 
-.seja-um-de-nos {
+#projetos .icon {
+  background-image: url(../img/icon-nossos-projetos.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+#projetos:hover {
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+#projetos:hover h4 p {
+  color: #4262FF;  
+}
+
+#projetos:hover .icon {
+  background-image: url(../img/icon-nossos-projetos-cor.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#seja-um-de-nos {
   background: #F2AA52;
 }
 
-.nosso-bazar {
+#seja-um-de-nos .icon {
+  background-image: url(../img/icon-um-de-nos.png);
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+#seja-um-de-nos:hover {
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+#seja-um-de-nos:hover h4 p {
+  color: #F2AA52;  
+}
+
+#seja-um-de-nos:hover .icon {
+  background-image: url(../img/icon-um-de-nos-cor.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#nosso-bazar {
   background: #E15454;
 }
 
-.fale-conosco {
+#nosso-bazar .icon {
+  background-image: url(../img/icon-bazar.png);
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+#nosso-bazar:hover {
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+#nosso-bazar:hover h4 p {
+  color: #E15454;
+}
+
+#nosso-bazar:hover .icon {
+  background-image: url(../img/icon-bazar-cor.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#fale-conosco {
   background: #77CC66;
+}
+
+#fale-conosco .icon {
+  background-image: url(../img/icon-contato.png);
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+#fale-conosco:hover{
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+#fale-conosco:hover h4 p {
+  color: #77CC66; 
+}
+
+#fale-conosco:hover .icon {
+  background-image: url(../img/icon-contato-cor.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*--------------------------------------------------------------
@@ -508,6 +591,7 @@ section {
   background-color: #fff;
   transition: 0.5s;
 }
+
 #meu-tempo:hover{
   color: #4262FF;
   fill: #4262FF;
