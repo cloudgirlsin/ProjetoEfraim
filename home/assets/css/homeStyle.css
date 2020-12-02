@@ -510,6 +510,7 @@ section {
 }
 #meu-tempo:hover{
   color: #4262FF;
+  fill: #4262FF;
   
 }
 #itens-gerais:hover{
@@ -531,7 +532,28 @@ section {
   }
 }
 
+.icon{
+  color: #fff;
+}
+.icon .icon-svg{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  fill: #fff;
+}
 
+#meu-tempo:hover #icon-meu-tempo{
+  transition: 0.5s;
+  fill: #4262FF;
+}
+#itens-gerais:hover #icon-itens-gerais{
+  transition: 0.5s;
+  fill: #E15454;
+}
+#algum-valor:hover #icon-algum-valor{
+  transition: 0.5s;
+  fill: #77CC66;
+}
 
 
 
