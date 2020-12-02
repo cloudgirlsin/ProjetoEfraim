@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+/*#hero {
     position: relative;
     height: 90vh;
   }
@@ -14,7 +14,7 @@
     background-position: top;
     background-size: cover;
     filter: brightness(50%);
-  }*/
+  }
   
   #hero::before {
     content: "";
@@ -75,6 +75,33 @@
     #hero {
       height: auto;
     }
+  }*/
+  
+  @media (max-width: 480px) {
+    .display-4 {
+      font-size: 35px;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+  }
+  
+  body div.jumbotron-with-background.jumbotron-fluid{
+    background-image: url("../img/contato-bg.png");
+    -webkit-filter: grayscale(70%);
+       -moz-filter: grayscale(80%);
+         -o-filter: grayscale(80%);
+        -ms-filter: grayscale(80%);
+            filter: grayscale(80%); 
+    opacity: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    padding-top: 12em;
+  }
+  
+  .text-white {
+    text-shadow: #000 2px 3px 2px !important;
   }
   
   /*--------------------------------------------------------------
