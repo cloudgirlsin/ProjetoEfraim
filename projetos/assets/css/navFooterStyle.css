@@ -386,6 +386,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	width: 260px;
   margin: 10px auto 15px;
+  color: #fff;
 }
 
 #footer .footer-top .footer-contact p {
@@ -397,7 +398,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-top .row a:link {
-   color: #fff;
+  color: #fff;
 }
 
 #footer .footer-top .row a:visited {
