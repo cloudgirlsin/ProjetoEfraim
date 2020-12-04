@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 80vh;
   overflow: hidden;
   position: relative;
-  background: rgba(0, 0, 0, 0.420) url("../img/headerEf.png");
+  background: rgba(0, 0, 0, 0.420) url("../img/header.jpg");
   background-blend-mode: darken;
   background-size: cover;
   position: relative;
