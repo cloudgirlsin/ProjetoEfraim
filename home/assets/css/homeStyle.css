@@ -342,6 +342,11 @@ section {
   text-align: left;
 }
 
+.sobre .section-title a {
+  text-decoration: none;
+  color: #F2AA52;
+}
+
 @media (max-width: 992px) {
   .sobre {
     padding: 10px 0;
