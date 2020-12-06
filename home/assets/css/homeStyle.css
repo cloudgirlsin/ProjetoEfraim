@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: #0880e8;
+  background: #4262ff;
   color: #fff;
   transition: all 0.4s;
 }
@@ -151,19 +151,16 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 
 .icon-boxes .icon-box {
-  padding: 20px;
+  padding: 2px;
   position: relative;
   overflow: hidden;
   box-shadow: 5px 10px 29px 0 rgba(68, 88, 144, 0.2);
   transition: all 0.3s ease-in-out;
   border-radius: 30px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.icon-boxes img {
-  margin-bottom: 20px;
-}
 
 .icon-box h4 {
   color: white;
@@ -318,7 +315,7 @@ section {
 --------------------------------------------------------------*/
 .sobre {
   padding: 60px 0;
-  background: #fff;
+  background: #4262ff5e;
   position: relative;
 }
 
@@ -343,6 +340,11 @@ section {
 
 .sobre .section-title p {
   text-align: left;
+}
+
+.sobre .section-title a {
+  text-decoration: none;
+  color: #F2AA52;
 }
 
 @media (max-width: 992px) {
@@ -544,6 +546,11 @@ section {
 /*--------------------------------------------------------------
 # apoio
 --------------------------------------------------------------*/
+#apoio {
+  background: #77cc661c;
+}
+
+
 .apoio .box {
   padding: 20px;
   text-align: center;
