@@ -1,17 +1,16 @@
 .jumbotron-with-background{
     background-image: url("../img/bazar/agasalhos.jpg");
-    -webkit-filter: grayscale(70%);
-       -moz-filter: grayscale(80%);
-         -o-filter: grayscale(80%);
-        -ms-filter: grayscale(80%);
-            filter: grayscale(80%); 
-    opacity: 60%;
+    background-size: 100%;
+    opacity: 90%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
+    width: 100%;
     padding-top: 12em;
+
 }
+
 
 .title-jumbotron{
     font-weight: bolder; 
@@ -34,16 +33,39 @@
     color: #DB7093;
 }
 
+
 .o-que-precisamos{
     padding: 40px 0;
 }
 
+.div-precisamos{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.border-o-que-precisamos{
+    border-color: #BA55D3 !important;
+    border-style: solid !important;
+    border: 25px !important;
+}
+
 .carousel{
     margin: 20px 0px;
-
     width: 100%;
 }
 
+
+#carousel-bazar{
+    overflow: hidden;
+    object-fit: fill;
+    max-width: 100% !important;
+    max-height: 600px;
+    display: block;
+}
+
+.img-carousel{
+    width: 100%;
+}
 
 .carousel-indicators li {
     width: 15px;
@@ -68,10 +90,18 @@ h6{
     vertical-align: text-bottom;
     align-self: end;
     align-items: end;
+    font-size: 1em !important;
 }
-
 
 .nopadding {
     padding: 0 !important;
     margin: 0 !important;
  }
+
+ @media (max-width: 480px) { 
+  .btn-quero-doar{
+      margin-top: 0.5em;
+      text-align: center;
+      align-self: center;      
+  }
+}
