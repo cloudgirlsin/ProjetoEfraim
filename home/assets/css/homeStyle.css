@@ -577,15 +577,15 @@ section {
 }
 #meu-tempo {
   background-color: #4262FF;
-  border: #4262FF solid 1px;
+  
 }
 #itens-gerais{
   background-color: #E15454;
-  border: #E15454 solid 1px;
+  
 }
 #algum-valor{
   background-color: #77CC66;
-  border: #77CC66 solid 1px;
+  
 }
 #meu-tempo:hover, #itens-gerais:hover, #algum-valor:hover{
   background-color: #fff;
