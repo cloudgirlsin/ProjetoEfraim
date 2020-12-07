@@ -345,6 +345,11 @@ section {
 .sobre .section-title a {
   text-decoration: none;
   color: #F2AA52;
+  font-weight: bold;
+}
+
+.sobre .section-title a:hover {
+  color: #4262ff;
 }
 
 @media (max-width: 992px) {
@@ -584,15 +589,15 @@ section {
 }
 #meu-tempo {
   background-color: #4262FF;
-  border: #4262FF solid 1px;
+  
 }
 #itens-gerais{
   background-color: #E15454;
-  border: #E15454 solid 1px;
+  
 }
 #algum-valor{
   background-color: #77CC66;
-  border: #77CC66 solid 1px;
+  
 }
 #meu-tempo:hover, #itens-gerais:hover, #algum-valor:hover{
   background-color: #fff;
@@ -601,6 +606,7 @@ section {
 
 #meu-tempo:hover{
   color: #4262FF;
+  fill: #4262FF;
   
 }
 #itens-gerais:hover{
@@ -622,7 +628,28 @@ section {
   }
 }
 
+.icon{
+  color: #fff;
+}
+.icon .icon-svg{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  fill: #fff;
+}
 
+#meu-tempo:hover #icon-meu-tempo{
+  transition: 0.5s;
+  fill: #4262FF;
+}
+#itens-gerais:hover #icon-itens-gerais{
+  transition: 0.5s;
+  fill: #E15454;
+}
+#algum-valor:hover #icon-algum-valor{
+  transition: 0.5s;
+  fill: #77CC66;
+}
 
 
 
