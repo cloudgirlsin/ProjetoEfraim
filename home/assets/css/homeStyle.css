@@ -345,6 +345,11 @@ section {
 .sobre .section-title a {
   text-decoration: none;
   color: #F2AA52;
+  font-weight: bold;
+}
+
+.sobre .section-title a:hover {
+  color: #4262ff;
 }
 
 @media (max-width: 992px) {
