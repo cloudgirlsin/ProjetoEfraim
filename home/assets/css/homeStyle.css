@@ -312,6 +312,15 @@ section {
   }
 }
 
+@media (max-width: 480px) {
+	p {
+		font-size: 12px;
+  }
+  
+  #icon-boxes p{
+    font-size: 20px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Sobre Nós
