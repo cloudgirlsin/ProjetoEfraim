@@ -1,6 +1,6 @@
 /**
-* Template Name: Medilab - v2.0.0
-* Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+* Template Name: Anyar - v2.1.0
+* Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -17,7 +17,7 @@
   });
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
-  var scrolltoOffset = $('#header').outerHeight() - 1;
+  var scrolltoOffset = $('#header').outerHeight() - 2;
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -26,7 +26,7 @@
 
         var scrollto = target.offset().top - scrolltoOffset;
 
-        if ($(this).attr("href") == '#header') {
+        if ($(this).attr("href") == '#header' || $(this).attr("href") == 'index.html#header') {
           scrollto = 0;
         }
 
@@ -60,29 +60,6 @@
         }, 1500, 'easeInOutExpo');
       }
     }
-  });
-
-  // Navigation active state on scroll
-  var nav_sections = $('section');
-  var main_nav = $('.nav-menu, .mobile-nav');
-
-  $(window).on('scroll', function() {
-    var cur_pos = $(this).scrollTop() + 200;
-
-    nav_sections.each(function() {
-      var top = $(this).offset().top,
-        bottom = top + $(this).outerHeight();
-
-      if (cur_pos >= top && cur_pos <= bottom) {
-        if (cur_pos <= bottom) {
-          main_nav.find('li').removeClass('active');
-        }
-        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
-      }
-      if (cur_pos < 300) {
-        $(".nav-menu ul:first li:first, .mobile-nav ul:first li:first").addClass('active');
-      }
-    });
   });
 
   // Mobile Navigation
@@ -119,6 +96,30 @@
   } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
+
+  // Navigation active state on scroll
+  /*var nav_sections = $('section');
+  var main_nav = $('.nav-menu, #mobile-nav');*/
+
+  $(window).on('scroll', function() {
+    var cur_pos = $(this).scrollTop() + 200;
+
+    nav_sections.each(function() {
+      var top = $(this).offset().top,
+        bottom = top + $(this).outerHeight();
+
+      if (cur_pos >= top && cur_pos <= bottom) {
+        if (cur_pos <= bottom) {
+          main_nav.find('li').removeClass('active');
+        }
+        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+      }
+      if (cur_pos < 300) {
+        $(".nav-menu ul:first li:first").addClass('active');
+      }
+    });
+  });
+
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -134,6 +135,7 @@
     $('#header').addClass('header-scrolled');
     $('#topbar').addClass('topbar-scrolled');
   }
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -150,40 +152,91 @@
     return false;
   });
 
-  // jQuery counterUp
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
+  // Intro carousel
+  var heroCarousel = $("#heroCarousel");
+
+  heroCarousel.on('slid.bs.carousel', function(e) {
+    $(this).find('h2').addClass('animate__animated animate__fadeInDown');
+    $(this).find('p, .btn-get-started').addClass('animate__animated animate__fadeInUp');
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
+  // Clients carousel (uses the Owl Carousel library)
+  $(".clients-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
     responsive: {
       0: {
-        items: 1
+        items: 2
       },
       768: {
-        items: 1
+        items: 4
       },
       900: {
-        items: 2
+        items: 6
       }
     }
   });
 
-  // Initiate the venobox plugin
-  $(document).ready(function() {
-    $('.venobox').venobox();
+  // Porfolio isotope and filter
+  $(window).on('load', function() {
+    var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item',
+      layoutMode: 'fitRows'
+    });
+
+    $('#portfolio-flters li').on('click', function() {
+      $("#portfolio-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      portfolioIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+      aos_init();
+    });
+
+    // Initiate venobox (lightbox feature used in portofilo)
+    $(document).ready(function() {
+      $('.venobox').venobox();
+    });
   });
 
-  // Initiate the datepicker plugin
-  $(document).ready(function() {
-    $('.datepicker').datepicker({
-      autoclose: true
+  // Scroll to a section with hash in url
+  $(window).on('load', function() {
+
+    if (window.location.hash) {
+      var initial_nav = window.location.hash;
+      if ($(initial_nav).length) {
+        var target_hash = $(initial_nav);
+        var scrollto_hash = target_hash.offset().top - $('#header').outerHeight();
+        $('html, body').animate({
+          scrollTop: scrollto_hash
+        }, 1500, 'easeInOutExpo');
+        $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+        $('.nav-menu, .mobile-nav').find('a[href="' + initial_nav + '"]').parent('li').addClass('active');
+      }
+    }
+
+  });
+
+  // Portfolio details carousel
+  $(".portfolio-details-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });
+
+  // Init AOS
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out-back",
+      once: true
     });
+  }
+  $(window).on('load', function() {
+    aos_init();
   });
 
 })(jQuery);
