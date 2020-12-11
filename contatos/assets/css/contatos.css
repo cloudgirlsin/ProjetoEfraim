@@ -161,7 +161,11 @@ height: 400px;
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+<<<<<<< Updated upstream
  .coluna-esquerda, a{
+=======
+ .coluna-esquerda {
+>>>>>>> Stashed changes
   padding-right: 45px!important;
 } 
 

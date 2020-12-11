@@ -105,16 +105,28 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+<<<<<<< Updated upstream
 
 /*----------------------------------
  # Cabeçalho
  */
+=======
+/*--------------------------------------------------------------
+# Cabeçalho
+--------------------------------------------------------------*/
+
+>>>>>>> Stashed changes
  #cabecalho {
   width: 100%;
   height: 80vh;
   overflow: hidden;
   position: relative;
+<<<<<<< Updated upstream
   background: url("../img/headerEf.png") top center;
+=======
+  background: rgba(0, 0, 0, 0.420) url("../img/headerEf.png");
+  background-blend-mode: darken;
+>>>>>>> Stashed changes
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -139,11 +151,27 @@ h1, h2, h3, h4, h5, h6 {
 
 #cabecalho h1 {
   color: #fff;
+<<<<<<< Updated upstream
+=======
+}
+
+@media (max-width: 425px) {
+  #cabecalho .btn-get-started {
+
+    display: block;
+    text-align: center;
+    font-size: 30px;   
+  }
+  #cabecalho h1 {
+    text-align: center;
+  }
+>>>>>>> Stashed changes
 }
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+<<<<<<< Updated upstream
 section {
   padding: 10px 0;
   overflow: hidden;
@@ -151,6 +179,29 @@ section {
 
 .section-bg {
   background-color: #f1f8ff;
+=======
+
+.icon-boxes .icon-box {
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 10px 29px 0 rgba(68, 88, 144, 0.2);
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icon-boxes img {
+  margin-bottom: 20px;
+}
+
+.icon-box h4 {
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 28px;
+>>>>>>> Stashed changes
 }
 
 .section-title {
@@ -234,12 +285,75 @@ section {
   background: #77CC66;
 }
 
+<<<<<<< Updated upstream
 /*.icon-boxes .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
   color: #777777;
 }*/
+=======
+#fale-conosco .icon {
+  background-image: url(../img/icon-contato.png);
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+#fale-conosco:hover{
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+#fale-conosco:hover h4 p {
+  color: #77CC66; 
+}
+
+#fale-conosco:hover .icon {
+  background-image: url(../img/icon-contato-cor.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f1f8ff;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+@media (max-width: 992px) {
+  .section-title h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .section-title p {
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+>>>>>>> Stashed changes
 
 /*--------------------------------------------------------------
 # sobre nós
@@ -273,6 +387,7 @@ section {
   text-align: justify;
 }
 
+<<<<<<< Updated upstream
 .sobre .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -281,6 +396,8 @@ section {
 
 
 
+=======
+>>>>>>> Stashed changes
 @media (max-width: 992px) {
   .sobre {
     padding: 10px 0;
@@ -506,6 +623,7 @@ section {
   font-size: 16px;
   font-weight: 300;
 }
+<<<<<<< Updated upstream
 .apoio p{
   text-align: justify;
 }
@@ -521,6 +639,19 @@ section {
 
 .apoio ul li {
   padding-bottom: 16px;
+=======
+#meu-tempo {
+  background-color: #4262FF;
+  border: #4262FF solid 1px;
+}
+#itens-gerais{
+  background-color: #E15454;
+  border: #E15454 solid 1px;
+}
+#algum-valor{
+  background-color: #77CC66;
+  border: #77CC66 solid 1px;
+>>>>>>> Stashed changes
 }
 
 .apoio ul i {
@@ -529,9 +660,15 @@ section {
   padding-right: 4px;
 }
 
+<<<<<<< Updated upstream
 .apoio ul .na {
   color: #ccc;
   text-decoration: line-through;
+=======
+#meu-tempo:hover{
+  color: #4262FF;
+  
+>>>>>>> Stashed changes
 }
 
 .apoio .btn-wrap {
@@ -559,6 +696,7 @@ section {
   background: #2b99f8;
 }
 
+<<<<<<< Updated upstream
 .apoio .featured h3 {
   color: #fff;
   background: #0880e8;
@@ -597,6 +735,9 @@ section {
   background-color: #77CC66;
 }
 
+=======
+
+>>>>>>> Stashed changes
 
 
 
