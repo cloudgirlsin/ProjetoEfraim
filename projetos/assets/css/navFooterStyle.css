@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #393939;
 }
 
@@ -23,7 +23,9 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #393939;
 }
 
 .container {
@@ -32,8 +34,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
+	
 }
-
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -364,6 +366,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
+  /* box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1); */
 }
 
 .logo-footer {
@@ -386,7 +389,6 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	width: 260px;
   margin: 10px auto 15px;
-  color: #fff;
 }
 
 #footer .footer-top .footer-contact p {
@@ -398,12 +400,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-top .row a:link {
-  color: #fff;
+   color: #fff;
 }
 
-#footer .footer-top .row a:visited {
+/* #footer .footer-top .row a:visited {
     color: #77CC66;
-}
+} */
 
 #footer .footer-top .row a:hover {
     color: #4262FF;
