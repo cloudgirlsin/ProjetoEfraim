@@ -386,6 +386,17 @@ section {
   object-fit: cover;
 }
 
+.galeria-carousel .carousel-indicators li{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.galeria-carousel .carousel-indicators .active{
+  background-color: #FF1493;
+}
+
+
 @media (min-width: 1024px) {
   #galeria-carousel p {
     width: 60%;
