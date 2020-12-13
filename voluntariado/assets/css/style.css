@@ -2021,7 +2021,6 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #1b1b1b;
 }
 
 #footer .footer-top .footer-contact {
@@ -2176,19 +2175,29 @@ section {
 
 /* estilo das mudanças feitas por nicole e valeska */
 
-.display-4, .lead {
+.display-4 {
 
-  color: #FFFFFF;
-  font-weight: bold;
   text-align: left;
-  font-family: sans-serif;
+  text-shadow: #000 2px 3px 2px !important;
+  
 }
 
-.lead{
 
-  margin-top: 30px;
+.subtitulo{
+
+  margin-top: 20px;
+  padding-bottom: 40px;
+  
 }
 
+
+.container-h4{
+
+  text-align: left;
+  margin-left: 90px;
+  color: #FFD02F;
+  margin-bottom: 30px;
+}
 
 .form-control {
 
@@ -2198,11 +2207,12 @@ section {
 
 .jumbotron {
 
-  background-image: url("../img/apoio3.jpg");
+  padding-top: 150px;
+  background-image: url("../img/apoio4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-blend-mode: multiply;
+  
 }
 
 .img-pequena{
