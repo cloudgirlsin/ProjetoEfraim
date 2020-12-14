@@ -362,13 +362,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   background: #22252c;
 }
 
-.img-fluid {
-  max-width: 85% !important;
+#footer .logo{
+  max-width: 50% !important;
+  max-height: 50%;
   height: auto;
+  width: auto;
 }
 
 
