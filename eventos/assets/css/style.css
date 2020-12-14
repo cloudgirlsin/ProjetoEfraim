@@ -1,6 +1,6 @@
 /**
-* Template Name: DevFolio - v2.3.0
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+* Template Name: Mentor - v2.2.0
+* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -9,227 +9,126 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background-color: #f5f5f5;
-  color: #4e4e4e;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
 }
-
-h1, h2, h3, h4, h5, h6, a {
-  color: #1e1e1e;
-}
-
-a {
-  transition: all 0.5s ease-in-out;
-}
-
-a:hover {
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
-
-p {
-	margin: 0;
-}
-
-@media (max-width: 480px) {
-	* {
-		font-size: 12px;
-	}
-}
-
-.p-r {
-  position: relative;
-}
-
-.color-a, a:hover {
-  color: #0078ff;
-}
-
-.color-d {
-  color: #f5f5f5;
-}
-
-.color-text-a {
-  color: #4e4e4e;
-}
-
-.box-shadow, .paralax-mf, .service-box, .work-box, .card-blog {
-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
-}
-
-.box-shadow-a, .button:hover {
-  box-shadow: 0 0 0 4px #cde1f8;
-}
-
-.display-4 {
-    font-size: 3rem !important;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
 
 /*--------------------------------------------------------------
-# Portfolio
+# Hero Section
 --------------------------------------------------------------*/
-body div.jumbotron-with-background.jumbotron-fluid{
-  background-image: url("../img/bg-capa.jpg");
-  /* -webkit-filter: grayscale(70%);
-     -moz-filter: grayscale(80%);
-       -o-filter: grayscale(80%);
-      -ms-filter: grayscale(80%);
-          filter: grayscale(80%); 
-  opacity: 60%; */
-  background-position: center;
-  background-repeat: no-repeat;
+#hero {
+  width: 100%;
+  height: 50vh;
+  background: url("../img/bg-capa.jpg") top center no-repeat;
   background-size: cover;
-  display: block;
-  padding-top: 12em;
-}
-
-.title-a{
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-
-.title-b, .title-c, .title-d {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-.title-a  {
-	color: #4262FF;
-}
-
-.title-b {
-  color: #E15454;
-}
-
-.title-c {
-	color: #D9A0BF;
-}
-
-.title-d {
-  color: #77CC66;
-}
-
-@media (min-width: 1100px) {
- .img-fluid  {
-  object-fit: cover; 
-  max-width: 450px;
-  max-height: 200px;
-
-}
-}
-
-@media (min-width: 1100px){ 
-    .img-fluid {
-      max-width: 100%;
-      height: auto;
-      max-height: none; 
-}
-
-}
-
-/* Gallery Section
---------------------------------*/
-.col-lg-4, .col-md-6 {
-	padding-right: 10px;
-  padding-left: 0px;
-}
-
-.jumbotron{ 
-  margin-bottom: 0px;
-}
-
-#gallery {
-  background: #fff;
-  padding: 30px 0 0 0;
-  overflow: hidden;
-}
-
-#gallery .container-fluid {
-  padding: 0px;
-}
-
-#gallery .gallery-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition: all ease-in-out 0.4s;
-}
-
-#gallery .gallery-item {
-  overflow: hidden;
   position: relative;
-  padding: 0;
-  vertical-align: middle;
+  padding-top: 82px;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero h1 {
+  margin: 0;
+	max-width: 1140px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFB703;
+}
+
+
+#hero h2 {
+  color: #fff;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+/*--------------------------------------------------------------
+# Events
+--------------------------------------------------------------*/
+.events .card {
+  border: 0;
+  padding: 0 30px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.events .card-img {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  overflow: hidden;
+  z-index: 9;
+  border-radius: 0;
+}
+
+.events .card-img img {
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.events .card-body {
+  z-index: 10;
+  background: #fff;
+  border-top: 4px solid #fff;
+  padding: 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-top: -60px;
+  transition: 0.3s;
+}
+
+.events .card-title {
+  font-weight: 700;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-#gallery .gallery-item img {
-  transition: all ease-in-out 0.4s;
-  width: 100%;
+.events .card-title a {
+  color: #37423b;
+  transition: 0.3s;
 }
 
-#gallery .gallery-item:hover img {
+.events .card-text {
+  color: #5e5e5e;
+}
+
+.events .read-more a {
+  color: #777777;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.events .read-more a:hover {
+  color: #e2393c;
+}
+
+.events .card:hover img {
   transform: scale(1.1);
 }
 
-#gallery .gallery-item:hover .gallery-overlay {
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.7);
+.events .card:hover .card-body {
+  border-color: #e2393c;
 }
 
-.colImagem {
-	margin-bottom: 10px;
+.events .card:hover .card-body .card-title a {
+  color: #e2393c;
 }
 
-.row {
-    margin: 10px 0;
+.section-bg:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: skewY(-3deg);
 }
-
-@media (min-width: 370px) {
-	.img-padrao {
-	max-height: 200px;
-	object-fit: cover;
-	align-content: center;
-}
-}
-
-@media (min-width: 500px) {
-	.img-padrao {
-	max-height: 270px;
-	object-fit: cover;
-	align-content: center;
-}
-}
-
-@media (min-width: 750px) {
-	.img-padrao {
-	max-height: 124px;
-	object-fit: cover;
-	align-content: center;
-}
-}
-
-@media (min-width: 1000px) {
-	.img-padrao {
-	max-height: 175px;
-	object-fit: cover;
-	align-content: center;
-}
-}
-
-@media (min-width: 1200px) {
-	.img-padrao {
-	max-height: 215px;
-	object-fit: cover;
-	align-content: center;
-}
+.section-bg-eventos:before {
+  background: #fdb905;
 }

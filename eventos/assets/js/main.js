@@ -1,6 +1,6 @@
 /**
-* Template Name: Medilab - v2.0.0
-* Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+* Template Name: Mentor - v2.2.0
+* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -62,29 +62,6 @@
     }
   });
 
-  // Navigation active state on scroll
-  var nav_sections = $('section');
-  var main_nav = $('.nav-menu, .mobile-nav');
-
-  $(window).on('scroll', function() {
-    var cur_pos = $(this).scrollTop() + 200;
-
-    nav_sections.each(function() {
-      var top = $(this).offset().top,
-        bottom = top + $(this).outerHeight();
-
-      if (cur_pos >= top && cur_pos <= bottom) {
-        if (cur_pos <= bottom) {
-          main_nav.find('li').removeClass('active');
-        }
-        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
-      }
-      if (cur_pos < 300) {
-        $(".nav-menu ul:first li:first, .mobile-nav ul:first li:first").addClass('active');
-      }
-    });
-  });
-
   // Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
@@ -119,21 +96,7 @@
   } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
-  // Toggle .header-scrolled class to #header when page is scrolled
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
-      $('#topbar').addClass('topbar-scrolled');
-    } else {
-      $('#header').removeClass('header-scrolled');
-      $('#topbar').removeClass('topbar-scrolled');
-    }
-  });
 
-  if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
-    $('#topbar').addClass('topbar-scrolled');
-  }
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -157,17 +120,28 @@
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
-
-
-  // Initiate the venobox plugin
-  $(document).ready(function() {
-    $('.venobox').venobox();
+  $(".testimonials-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      900: {
+        items: 2
+      }
+    }
   });
 
-  // Initiate the datepicker plugin
-  $(document).ready(function() {
-    $('.datepicker').datepicker({
-      autoclose: true
+  // Init AOS
+  $(window).on('load', function() {
+    AOS.init({
+      duration: 1000,
+      once: true
     });
   });
 
