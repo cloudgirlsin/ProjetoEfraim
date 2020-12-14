@@ -1,13 +1,4 @@
-/**
-* Template Name: Medilab - v2.0.0
-* Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #393939;
@@ -48,38 +39,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
 }
 
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #1977cc;
-  border-top-color: #d1e6f9;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -118,10 +77,10 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: rgba(255, 255,255, 0.9);
   transition: all 0.5s;
   z-index: 1000;
-  padding: 15px 0;
+  padding: 0px 0;
   top: auto;
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
@@ -131,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 120px;
+  max-height: 90px;
 }
 
 @media (max-width: 992px) {
@@ -175,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   padding: 5px 2px;
-  border-bottom: 2px solid #fff;
+  /* border-bottom: 2px solid #fff; */
 	font-weight: 700;
 }
 
@@ -291,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 30px;
-  top: 30px;
+  top: 15px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -404,17 +363,14 @@ h1, h2, h3, h4, h5, h6 {
 #footer {
   color: #fff;
   font-size: 16px;
-  background: #393939;
+  background: #22252c;
 }
 
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-  box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+.img-fluid {
+  max-width: 85% !important;
+  height: auto;
 }
 
-.logo-footer {
-  width: 115px;
-}
 
 #footer .footer-top .footer-contact {
   margin-bottom: 100px;
@@ -442,37 +398,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#footer .footer-top .row a:link {
-   color: #fff;
-}
-
-#footer .footer-top .row a:visited {
-    color: #77CC66;
-}
-
-#footer .footer-top .row a:hover {
-    color: #4262FF;
-}
-
-#footer .footer-top .row a:active {
-    color: #FFD02F;
-}
-
-.logo-footer {
-  width: 115px;
-}
-
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-  color: #393939;
-}
 
 #footer .footer-top .row  .social-links {
   margin: 0 auto;
   width: 125px;
 }
 
+#footer a{
+  color: #fff;
+}
 
 #footer .footer-top .row  .social-links a {
   font-size: 20px;
@@ -496,5 +430,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-top .row .designer-c {
-	font-size: 12px;
+  font-size: 13px;
+  color: #fff;
 }

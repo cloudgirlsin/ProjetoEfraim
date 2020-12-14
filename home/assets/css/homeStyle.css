@@ -471,6 +471,8 @@ section {
 #projetos img{
   height: 350px;
   object-fit: cover;
+  border: 2px solid #E15454;
+  padding: 6px; 
 }
 
 .projetos .nav-link {
@@ -575,6 +577,8 @@ section {
 #doacoes img{
   height: 100%;
   object-fit: cover;
+  border: 2px solid  #FFD02F;
+  padding: 6px; 
 }
 
 /*--------------------------------------------------------------
@@ -582,6 +586,13 @@ section {
 --------------------------------------------------------------*/
 #voluntariado h2{
   color: #4262FF;
+}
+
+.voluntarios-img{
+  
+  object-fit: cover;
+  border: 2px solid  #4262FF;
+  padding: 6px; 
 }
 
 .voluntariado .btn-get-started{
