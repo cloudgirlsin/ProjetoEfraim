@@ -1372,7 +1372,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #e03a3c;
+  background: #FFD02F;
   border: 0;
   padding: 10px 32px;
   color: #fff;
@@ -2194,7 +2194,7 @@ section {
 .container-h4{
 
   text-align: left;
-  margin-left: 90px;
+  margin-left: 10px;
   color: #FFD02F;
   margin-bottom: 30px;
 }
@@ -2215,12 +2215,20 @@ section {
   
 }
 
-.img-pequena{
-  width: 300px;
-  height: 200px;
-  margin: 0 20px 0 20px;
-}
-
 .img-grande{
   padding: 0 20px 0 20px;
 }
+
+.contact{
+
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+.logo{
+
+  margin-left: 110px;
+}
+
+
