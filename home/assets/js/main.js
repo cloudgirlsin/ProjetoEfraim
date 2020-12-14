@@ -1,23 +1,14 @@
 /**
-* Template Name: Anyar - v2.1.0
-* Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
+* Template Name: Presento - v1.1.0
+* Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
 !(function($) {
   "use strict";
 
-  // Preloader
-  $(window).on('load', function() {
-    if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
-        $(this).remove();
-      });
-    }
-  });
-
   // Smooth scroll for the navigation menu and links with .scrollto classes
-  var scrolltoOffset = $('#header').outerHeight() - 2;
+  var scrolltoOffset = $('#header').outerHeight() - 1;
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -26,7 +17,7 @@
 
         var scrollto = target.offset().top - scrolltoOffset;
 
-        if ($(this).attr("href") == '#header' || $(this).attr("href") == 'index.html#header') {
+        if ($(this).attr("href") == '#header') {
           scrollto = 0;
         }
 
@@ -60,6 +51,29 @@
         }, 1500, 'easeInOutExpo');
       }
     }
+  });
+
+  // Navigation active state on scroll
+  var nav_sections = $('section');
+  var main_nav = $('.nav-menu, .mobile-nav');
+
+  $(window).on('scroll', function() {
+    var cur_pos = $(this).scrollTop() + 200;
+
+    nav_sections.each(function() {
+      var top = $(this).offset().top,
+        bottom = top + $(this).outerHeight();
+
+      if (cur_pos >= top && cur_pos <= bottom) {
+        if (cur_pos <= bottom) {
+          main_nav.find('li').removeClass('active');
+        }
+        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+      }
+      if (cur_pos < 300) {
+        $(".nav-menu ul:first li:first, .mobile-menu ul:first li:first").addClass('active');
+      }
+    });
   });
 
   // Mobile Navigation
@@ -97,44 +111,20 @@
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
 
-  // Navigation active state on scroll
-  var nav_sections = $('section');
-  var main_nav = $('.nav-menu, #mobile-nav');
-
-  $(window).on('scroll', function() {
-    var cur_pos = $(this).scrollTop() + 200;
-
-    nav_sections.each(function() {
-      var top = $(this).offset().top,
-        bottom = top + $(this).outerHeight();
-
-      if (cur_pos >= top && cur_pos <= bottom) {
-        if (cur_pos <= bottom) {
-          main_nav.find('li').removeClass('active');
-        }
-        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
-      }
-      if (cur_pos < 300) {
-        $(".nav-menu ul:first li:first").addClass('active');
-      }
-    });
-  });
-
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
-      $('#topbar').addClass('topbar-scrolled');
     } else {
       $('#header').removeClass('header-scrolled');
-      $('#topbar').removeClass('topbar-scrolled');
     }
   });
 
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
-    $('#topbar').addClass('topbar-scrolled');
   }
+
+  
 
   // Back to top button
   $(window).scroll(function() {
@@ -152,31 +142,9 @@
     return false;
   });
 
-  // Intro carousel
-  var heroCarousel = $("#heroCarousel");
 
-  heroCarousel.on('slid.bs.carousel', function(e) {
-    $(this).find('h2').addClass('animate__animated animate__fadeInDown');
-    $(this).find('p, .btn-get-started').addClass('animate__animated animate__fadeInUp');
-  });
 
-  // Clients carousel (uses the Owl Carousel library)
-  $(".clients-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 2
-      },
-      768: {
-        items: 4
-      },
-      900: {
-        items: 6
-      }
-    }
-  });
+
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
@@ -201,37 +169,10 @@
     });
   });
 
-  // Scroll to a section with hash in url
-  $(window).on('load', function() {
-
-    if (window.location.hash) {
-      var initial_nav = window.location.hash;
-      if ($(initial_nav).length) {
-        var target_hash = $(initial_nav);
-        var scrollto_hash = target_hash.offset().top - $('#header').outerHeight();
-        $('html, body').animate({
-          scrollTop: scrollto_hash
-        }, 1500, 'easeInOutExpo');
-        $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-        $('.nav-menu, .mobile-nav').find('a[href="' + initial_nav + '"]').parent('li').addClass('active');
-      }
-    }
-
-  });
-
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
-
   // Init AOS
   function aos_init() {
     AOS.init({
       duration: 1000,
-      easing: "ease-in-out-back",
       once: true
     });
   }
