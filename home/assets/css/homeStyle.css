@@ -440,6 +440,7 @@ section {
 }
 .section-bg-voluntariado:before {
   background: #e2f4ff;
+  bottom: -60px;
   
 }
 
