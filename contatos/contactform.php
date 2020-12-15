@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
 
      $mailTo="contato@projetoefraim.com.br";
      $headers="From: ".$mailFrom;
-	 //$subject="Apoiadores Cloud Girls";
+     $subject="".$subject;
      $txt="Nome:" .$name. ".\nTel:" .$phone. ".\n\n".$message;
 
      mail($mailTo, $subject, $txt, $headers);
