@@ -1,0 +1,91 @@
+.jumbotron-with-background{
+    background-image: url("../img/bazar/agasalhos.jpg");
+    background-size: 100%;
+    opacity: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 20em;
+    padding-top: 12em;
+
+}
+
+
+body{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.title-jumbotron{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold; 
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 3em;
+
+}
+
+.text-h6{
+    text-align: justify;
+    font-style: normal;
+    margin-top: 2em;
+}
+
+.horarios{
+    font-family: 'Lato', sans-serif;
+    padding-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.horario-h1{
+    color: 	#32CD32;
+    font-size: 2em;
+}
+
+
+.carousel{
+    margin: 20px 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+#carousel-bazar{
+    overflow: hidden;
+    object-fit: fill;
+    max-width: 100% !important;
+    max-height: 600px;
+    display: block;
+}
+
+.img-carousel{
+    width: 100%;
+    height: 20%;
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+  .carousel-indicators .active{
+    background-color: #FF1493;
+}
+
+h6{
+    font-style: oblique;
+}
+
+
+ @media (max-width: 480px) { 
+ body{
+     font-size: 12px;
+ }
+}
