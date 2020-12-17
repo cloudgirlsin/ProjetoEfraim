@@ -11,7 +11,9 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background: url("../img/bg-amarelo-3.png") top center no-repeat;
 }
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -53,6 +55,11 @@ body {
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
+.conteiner-events { 
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
 .events .card {
   border: 0;
   padding: 0 30px;
@@ -122,13 +129,3 @@ body {
   color: #e2393c;
 }
 
-.section-bg:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  transform: skewY(-3deg);
-}
-.section-bg-eventos:before {
-  background: #fdb905;
-}
