@@ -7,21 +7,25 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+  $receiving_email_address = 'contato@cloudgirls.com.br';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+  if (isset($_POST['submit'])) {
+     
+    $name = $_POST['name'];
+    $phone = $_POST['tel'];
+    $mailFrom = $_POST['email']; 
+    $message = $_POST['message'];
+    $subject= $_POST['subject'];
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+    $mailTo="contato@cloudgirls.com.br";
+    $headers="From: ".$mailFrom;
+    $subject="".$subject;
+    $txt="Nome:" .$name. ".\nTel:" .$phone. ".\n\n".$message;
+
+    mail($mailTo, $subject, $txt, $headers);
+    header("Location: index.html?mailsend");
+
+}
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   /*

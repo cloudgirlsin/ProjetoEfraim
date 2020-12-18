@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -78,16 +78,36 @@
       </div>
 
       <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-          <h4 class="subtitulo">Venha fazer parte do nosso time! Para se tornar um voluntário, no dia da visita presencial, leve seus documentos como RG e comprovante de residência.</h4>
-        </div>
-
-        <div  class="container-h4" data-aos="fade-up"> 
-           <h4>Preencha o formulário abaixo para ser um voluntário!</h4>
-        </div>
-
-
         
+        <div class="container" data-aos="fade-up">
+          
+        </div>
+
+        <section id="about" class="about" data-aos="fade-up">
+          <div class="container">
+    
+            <div class="row content">
+              <div class="col-lg-6">
+                <h3 class="color-about">Venha fazer parte do nosso time!</h2>
+                <h4>Para se tornar um voluntário, preencha o formulário abaixo e no dia da visita presencial traga seu RG e comprovante de residência!</h3c>
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 img-inicial">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ipsum cumque, aspernatur odio mollitia corporis maiores iure ab saepe itaque pariatur? Maxime aut aliquid fugit inventore nisi voluptatibus assumenda voluptatem. 
+                </p>
+                <ul>
+                  <ol><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</ol>
+                  <ol><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</ol>
+                  <ol><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</ol>
+                </ul>
+              </div>
+            </div>
+    
+          
+        </div>
+          
+        </section><!-- End About Section -->
+
         <div class="row" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-6">
@@ -108,19 +128,18 @@
               </div>
               <div class="form-group">
                 <label>Telefone/Celular</label>
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Digite seu telefone ou celular" data-rule="minlen:4"
+                <input type="text" class="form-control" name="tel" id="subject" placeholder="Digite seu telefone ou celular" data-rule="minlen:4"
                   data-msg="Por favor, insira um telefone válido" />
                 <div class="validate"></div>
               </div>
               
               <div class="form-group">
                 <label>Qual área pode ajudar?</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" name="subject" id="exampleFormControlSelect1">
+                  <option>Recreação</option>
+                  <option>Creche</option>
+                  <option>Contar Histórias</option>
                   <option>Cozinha</option>
-                  <option>Limpeza</option>
-                  <option>Transporte</option>
-                  <option>Eventos</option>
-                  <option>Outros</option>
                 </select>
                 <div class="validate"></div>
               </div>
@@ -133,7 +152,7 @@
               <div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
               </div>
               <div class="text-center">
                 <button type="submit">Enviar</button>
