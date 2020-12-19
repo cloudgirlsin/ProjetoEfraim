@@ -90,6 +90,8 @@ body {
 }
 
 .events .card-title {
+	font-size: 26px;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
@@ -128,3 +130,19 @@ body {
   color: #e2393c;
 }
 
+@media (max-width: 480px) {
+
+	#hero h1 {
+  font-size: 2.25em;
+  
+}
+
+	.events .card-title {
+	font-size: 1.32em;
+}
+	p { 
+		font-size:0.75em;
+	}
+
+
+}
