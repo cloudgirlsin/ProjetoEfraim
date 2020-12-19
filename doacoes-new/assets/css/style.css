@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #393939;
 }
 
 a {
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   background: url("../img/hero-bg.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: #FFF;
+  color: #FFB703;
 }
 
 #hero h2 {
