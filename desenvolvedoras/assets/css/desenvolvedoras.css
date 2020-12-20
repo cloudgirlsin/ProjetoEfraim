@@ -118,7 +118,7 @@
   }
   
   .section-title {
-    text-align: center;
+    /* text-align: center; */
     padding-bottom: 30px;
   }
   
@@ -138,7 +138,7 @@
   /* bloco do título */
   .container .section-title{
     /*margin-left: 45px;*/
-    text-align: center;
+    /* text-align: center; */
     padding-bottom: 30px;
   }
   .container .section-title h2{
