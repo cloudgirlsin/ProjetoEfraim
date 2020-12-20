@@ -54,7 +54,7 @@
   });
 
   // Navigation active state on scroll
-  var nav_sections = $('section');
+  /*var nav_sections = $('section');
   var main_nav = $('.nav-menu, .mobile-nav');
 
   $(window).on('scroll', function() {
@@ -74,7 +74,7 @@
         $(".nav-menu ul:first li:first, .mobile-menu ul:first li:first").addClass('active');
       }
     });
-  });
+  });*/
 
   // Mobile Navigation
   if ($('.nav-menu').length) {
