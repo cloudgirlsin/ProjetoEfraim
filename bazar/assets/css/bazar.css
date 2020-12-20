@@ -5,51 +5,57 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     display: block;
     width: 100%;
-    height: 20em;
-    padding-top: 12em;
-
+    height: 50vh;
+    padding-top: 9.5em;
 }
 
 
-body{
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Raleway', sans-serif;
-}
 
+h1{
+  font-family: "Raleway", sans-serif; 
+}
 
 .title-jumbotron{
-    font-family: 'Lato', sans-serif;
-    font-weight: bold; 
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 3em;
-
+    font-family: "Raleway", sans-serif; 
+    font-weight: 700; 
+    font-size: 48px;
+    color: #FFB703;
 }
 
 .text-h6{
     text-align: justify;
     font-style: normal;
-    margin-top: 2em;
+    font-size: 1.3em;
 }
 
 .horarios{
-    font-family: 'Lato', sans-serif;
+    font-family: "Raleway", sans-serif;
     padding-top: 2em;
     margin-left: auto;
     margin-right: auto;
 }
 
 .horario-h1{
-    color: 	#32CD32;
+    color: rgba(0, 110, 255, 0.623);
     font-size: 2em;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
 }
 
-
+body{
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Open sans", sans-serif;
+  color: #393939;
+  background-image: url("../img/bazar/bg-vermelho.png");
+  background-position: top;
+  
+}
 .carousel{
-    margin: 20px 0px;
+    margin: 2em 0px;
     width: 100%;
     margin-left: auto;
     margin-right: auto; 
@@ -67,6 +73,7 @@ body{
 .img-carousel{
     width: 100%;
     height: 20%;
+    border-radius: 10px! Important;
 }
 
 .carousel-indicators li {
@@ -88,4 +95,65 @@ h6{
  body{
      font-size: 12px;
  }
+ .jumbotron-with-background{
+    padding-top: 14em;
 }
+
+}
+
+.bazar .card {
+  border: 0;
+  padding: 0 3em;
+  position: relative;
+  margin-top: 1em;
+}
+
+
+
+.bazar .card-body {
+  background: #fff;
+  border-top: 4px solid #fff;
+  padding: 1.5em;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5em;
+  transition: 0.3s;
+  opacity: 80%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  z-index: 9;
+  border-radius: 0;
+}
+
+
+
+.bazar .card-title {
+	font-size: 2.5em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(0, 110, 255, 0.623);
+}
+
+.bazar .card-text {
+  color: #5e5e5e;
+}
+
+
+.bazar .card:hover .card-body {
+  border-color: rgb(248, 74, 132);
+}
+
+.bazar .card:hover .card-body .card-title {
+  color: rgb(248, 74, 132);
+}
+
+	.bazar .card-title {
+	font-size: 1.32em;
+}
+
+p { 
+    font-size:0.75em;
+}
+
