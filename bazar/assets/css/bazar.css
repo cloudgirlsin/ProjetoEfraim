@@ -1,59 +1,153 @@
-.jumbotron-with-background{
-    background-image: url("../img/bazar/agasalhos.jpg");
-    background-size: 100%;
-    opacity: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 50vh;
-    padding-top: 9.5em;
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #5e5e5e;
+	background: url("../img/bg-vermelho.png") top center no-repeat;
+}
+
+a {
+  color: #e03a3c;
+}
+
+a:hover {
+  color: #e76668;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+	font-weight: 700;
+}
+
+.fw-bold {
+	font-weight: bold;
+}
+
+p { 
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 50vh;
+  background: url("../img/agasalhos.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 82px;
+	/* background-size: 100%;
+    opacity: 90%; */
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero h1 {
+  margin: 0;
+	max-width: 1140px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFB703;
+}
+
+/*--------------------------------------------------------------
+# Events
+--------------------------------------------------------------*/
+.eventsContainer { 
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.events {
+  background-size: cover;
+  position: relative;
+}
+
+.events::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Titles
+--------------------------------------------------------------*/
+
+.bazar .card-body {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: -5px 10px 15px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: -5px 10px 15px 0px rgba(0,0,0,0.4);
+  box-shadow: -5px 10px 15px 0px rgba(0,0,0,0.4);
+  padding: 30px;
+	margin: 30px auto 0;
+
+}
+
+.bazar .card-title {
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: rgba(0, 110, 255, 0.623);
+}
+
+.bazar .card-text {
+  color: #5e5e5e;
+}
+
+.bazar .card:hover .card-body {
+  border-color: rgb(248, 74, 132);
+}
+
+.bazar .card:hover .card-body .card-title {
+  color: rgb(248, 74, 132);
+}
+
+@media (max-width: 480px) {
+
+ #hero	h1 {
+  font-size: 2.25em;
+}
+
+	h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+	font-size: 1.32em;
 }
 
 
+p { 
+		font-size:0.75em;
+	}
 
-h1{
-  font-family: "Raleway", sans-serif; 
-}
-
-.title-jumbotron{
-    font-family: "Raleway", sans-serif; 
-    font-weight: 700; 
-    font-size: 48px;
-    color: #FFB703;
-}
-
-.text-h6{
-    text-align: justify;
-    font-style: normal;
-    font-size: 1.3em;
 }
 
 .horarios{
-    font-family: "Raleway", sans-serif;
-    padding-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
+	margin: 0 auto;
 }
 
-.horario-h1{
+.horario-title{
     color: rgba(0, 110, 255, 0.623);
-    font-size: 2em;
-    font-weight: 700;
-    font-family: "Raleway", sans-serif;
 }
 
-body{
-  font-size: 16px;
-  font-weight: bold;
-  font-family: "Open sans", sans-serif;
-  color: #393939;
-  background-image: url("../img/bazar/bg-vermelho.png");
-  background-position: top;
-  
-}
+
 .carousel{
     margin: 2em 0px;
     width: 100%;
@@ -66,14 +160,13 @@ body{
     overflow: hidden;
     object-fit: fill;
     max-width: 100% !important;
-    max-height: 600px;
+    max-height: 400px;
     display: block;
 }
 
-.img-carousel{
+.img-carouse li{
     width: 100%;
-    height: 20%;
-    border-radius: 10px! Important;
+    height: 75%; 
 }
 
 .carousel-indicators li {
@@ -86,74 +179,7 @@ body{
     background-color: #FF1493;
 }
 
-h6{
+lastText{
     font-style: oblique;
-}
-
-
- @media (max-width: 480px) { 
- body{
-     font-size: 12px;
- }
- .jumbotron-with-background{
-    padding-top: 14em;
-}
-
-}
-
-.bazar .card {
-  border: 0;
-  padding: 0 3em;
-  position: relative;
-  margin-top: 1em;
-}
-
-
-
-.bazar .card-body {
-  background: #fff;
-  border-top: 4px solid #fff;
-  padding: 1.5em;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 1.5em;
-  transition: 0.3s;
-  opacity: 80%;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  z-index: 9;
-  border-radius: 0;
-}
-
-
-
-.bazar .card-title {
-	font-size: 2.5em;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  text-align: center;
-  color: rgba(0, 110, 255, 0.623);
-}
-
-.bazar .card-text {
-  color: #5e5e5e;
-}
-
-
-.bazar .card:hover .card-body {
-  border-color: rgb(248, 74, 132);
-}
-
-.bazar .card:hover .card-body .card-title {
-  color: rgb(248, 74, 132);
-}
-
-	.bazar .card-title {
-	font-size: 1.32em;
-}
-
-p { 
-    font-size:0.75em;
 }
 
