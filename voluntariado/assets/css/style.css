@@ -2210,11 +2210,6 @@ section {
 }
 
 
-.logo{
-
-  margin-left: 50px;
-}
-
 .color-about{
 
   color: #FFD02F;
@@ -2246,6 +2241,10 @@ text-align: left;
 @media screen and (max-width: 552px){
   .img-grande{
     padding: 0;
+  }
+  .contact{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   
   
