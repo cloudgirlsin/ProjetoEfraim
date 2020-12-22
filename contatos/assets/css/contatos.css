@@ -6,83 +6,68 @@
 */
 
 /*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #e03a3c;
+}
+
+a:hover {
+  color: #e76668;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+.fw-bold {
+	font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-/*#hero {
-  position: relative;
-  height: 90vh;
-}
-
-/*
 #hero {
   width: 100%;
-  height: 90vh;
-  background: url("../img/contato-bg.png");
-  background-position: top;
+  height: 50vh;
+  background: url("../img/novo-contato3-bg.jpg") top center no-repeat;
   background-size: cover;
-  filter: brightness(50%);
-}
-
-#hero::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 90vh;
-  background: url("../img/contato-bg.png");
-  background-position: top;
-  background-size: cover;
-  filter: brightness(50%);
-}
-
-#hero .container {
   position: relative;
+  padding-top: 82px;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #hero h1 {
-  margin: 1.5em 0 1em;
-  font-size: 96px;
+  margin: 0;
+	max-width: 1140px;
+  font-size: 48px;
   font-weight: 700;
-  line-height: 56px;
-  color: white;
+  color: #FFB703;
 }
 
-#hero h2 {
-  color: white;
-  margin: 1em 0;
-  font-size: 42px;
-  font-style: italic;
+
+ h2 {
+  color: #fff;
+  margin: 10px 0 0 0;
+  font-size: 24px;
 }
 
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 992px) {
-  #hero {
-    margin-bottom: 0;
-    height: 100vh;
-  }
-  #hero .container {
-    padding-bottom: 63px;
-  }
-  #hero h1 {
-    font-size: 48px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 28px;
-    line-height: 32px;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-height: 500px) {
-  #hero {
-    height: auto;
-  }
-}*/
 
 @media (max-width: 760px) {
   section div form .coluna-esquerda, section div form .coluna-direita{
@@ -90,7 +75,7 @@
   }
 
 }
-
+/* 
 body div.jumbotron-with-background.jumbotron-fluid{
   background-image: url("../img/novo-contato3-bg.jpg");
  /* -webkit-filter: grayscale(70%);
@@ -99,12 +84,12 @@ body div.jumbotron-with-background.jumbotron-fluid{
       -ms-filter: grayscale(80%);
           filter: grayscale(80%); 
   opacity: 60%;*/
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
   padding-top: 12em;
-}
+} */ 
 
 /*
 @media (min-width: 1024px) {
@@ -122,7 +107,7 @@ body div.jumbotron-with-background.jumbotron-fluid{
 --------------------------------------------------------------*/
 
 section {
-  padding: 40px 0 60px 0;
+  padding: 40px 0 0;
   overflow: hidden;
 }
 
@@ -130,23 +115,23 @@ section {
   background-color: #f1f7fd;
 }
 
-.section-title {
+/* .section-title {
   text-align: center;
   padding-bottom: 30px;
-}
+}*/
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  position: relative;
-  color: #2c4964;
+  /* position: relative;
+  color: #2c4964; */
 }
 
-.section-title p {
+/* .section-title p {
   margin-bottom: 0;
-}
+} */
 
 
 /* bloco do título  fale conosco */
@@ -157,12 +142,39 @@ section {
 }
 .container-fluid .section-title h2{
   color: #77CC66; 
-  font-size:48px;
   padding-bottom: 0;
 }
 .container-fluid .section-title p{
-  font-size: 20px;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+
+	#hero h1 {
+  font-size: 2.25em;
+  
+}
+
+.section-title h2 {
+	font-size: 1.75em;
+}
+
+.localizacao {
+	margin-top: -1em;
+}
+
+	p { 
+		font-size:0.75em;
+	}
+
+	.col-form-label {
+    font-size: 0.75em;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea, .form-control {
+    font-size: 0.7em !important;
+}
+
 }
 
 
