@@ -145,7 +145,7 @@
     color: #77CC66; 
     font-size:32px;
     padding-bottom: 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
 
 /*--------------------------------------------------------------
@@ -205,4 +205,41 @@
 .dev .member .social i {
   font-size: 25px;
   margin: 0 2px;
+}
+
+@media (max-width: 480px) {
+
+	#hero h1 {
+  font-size: 2.25em;
+  
+}
+
+.section-title h2 {
+	font-size: 1.75em;
+}
+
+.localizacao {
+	margin-top: -1em;
+}
+
+	p { 
+		font-size:0.75em;
+	}
+
+	.col-form-label {
+    font-size: 0.75em;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea, .form-control {
+    font-size: 0.7em !important;
+}
+
+#footer .footer-top .row p, #footer .footer-top .row p {
+  font-size: 14px ;
+}
+
+.doacoes dl, .doacoes ol, .doacoes ul, .bazar li {
+  font-size: 0.75em;
+}
+
 }

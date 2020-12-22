@@ -367,7 +367,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #hero {
-    text-align: center;
+    /* text-align: center; */
     padding-top: 58px;
   }
   #hero h1 {
@@ -603,4 +603,40 @@ section {
 .voluntariado .content ul {
   list-style: none;
   padding: 0;
+}
+
+
+
+@media (max-width: 480px) {
+
+	#hero h1 {
+  font-size: 2.25em;
+  
+}
+
+.section-title h2 {
+	font-size: 1.75em;
+}
+
+.localizacao {
+	margin-top: -1em;
+}
+
+	p { 
+		font-size:0.75em;
+	}
+
+	.col-form-label {
+    font-size: 0.75em;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea, .form-control {
+    font-size: 0.7em !important;
+}
+
+#footer .footer-top .row p, #footer .footer-top .row p {
+  font-size: 14px ;
+}
+
+
 }
