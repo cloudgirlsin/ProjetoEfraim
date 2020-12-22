@@ -1,13 +1,4 @@
-/**
-* Template Name: Medilab - v2.0.0
-* Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #393939;
@@ -48,38 +39,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
 }
 
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #1977cc;
-  border-top-color: #d1e6f9;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -118,10 +77,10 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: rgba(255, 255,255, 0.9);
   transition: all 0.5s;
   z-index: 1000;
-  padding: 15px 0;
+  padding: 0px 0;
   top: auto;
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
@@ -131,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 120px;
+  max-height: 90px;
 }
 
 @media (max-width: 992px) {
@@ -175,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   padding: 5px 2px;
-  border-bottom: 2px solid #fff;
+  /* border-bottom: 2px solid #fff; */
 	font-weight: 700;
 }
 
@@ -291,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 30px;
-  top: 30px;
+  top: 15px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -397,167 +356,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-
-.margem{
-  padding-top: 150px;
-}
-.contact .info-box {
-  color: #444444;
-  text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 20px 0 30px 0;
-  border-radius: 4px;
-}
-
-.contact .info-box i {
-  font-size: 32px;
-  color: #e03a3c;
-  border-radius: 50%;
-  padding: 8px;
-  border: 2px dotted #f8d4d5;
-}
-
-.contact .info-box h3 {
-  font-size: 20px;
-  color: #777777;
-  font-weight: 700;
-  margin: 10px 0;
-}
-
-.contact .info-box p {
-  padding: 0;
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 30px;
-  border-radius: 4px;
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input, .contact .php-email-form textarea {
-  box-shadow: none;
-  font-size: 14px;
-  border-radius: 4px;
-}
-
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #111111;
-}
-
-.contact .php-email-form input {
-  padding: 20px 15px;
-}
-
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .php-email-form button[type="submit"] {
-  background: #FFD02F;
-  border: 0;
-  padding: 10px 32px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: #e35052;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
 #footer {
   color: #fff;
-  font-size: 16px;
-  background: #393939;
+  font-size: 14px;
+  background: #22252c;
 }
 
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-  box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+#footer .logo{
+  max-width: 50% !important;
+  max-height: 50%;
+  height: auto;
+  width: auto;
 }
 
-.logo-footer {
-  width: 115px;
-}
 
 #footer .footer-top .footer-contact {
   margin-bottom: 100px;
@@ -585,37 +400,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#footer .footer-top .row a:link {
-   color: #fff;
-}
-
-#footer .footer-top .row a:visited {
-    color: #77CC66;
-}
-
-#footer .footer-top .row a:hover {
-    color: #4262FF;
-}
-
-#footer .footer-top .row a:active {
-    color: #FFD02F;
-}
-
-.logo-footer {
-  width: 115px;
-}
-
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-  color: #393939;
-}
 
 #footer .footer-top .row  .social-links {
   margin: 0 auto;
   width: 125px;
 }
 
+#footer a{
+  color: #fff;
+}
 
 #footer .footer-top .row  .social-links a {
   font-size: 20px;
@@ -631,6 +424,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 36px;
   transition: 0.3s;
 }
+
 #footer .footer-top .row .social-links a:hover {
   background: #4262FF;
   color: #fff;
@@ -638,5 +432,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-top .row .designer-c {
-	font-size: 12px;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
 }

@@ -84,10 +84,6 @@ h1, h2, h3, h4, h5, h6 {
   top: auto;
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
-#header .img-fluid {
-  max-width: 85% !important;
-  height: auto;
-}
 
 #header.header-scrolled {
   top: 0;
@@ -366,13 +362,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   background: #22252c;
 }
 
-#footer .img-fluid {
-  max-width: 85% !important;
+#footer .logo{
+  max-width: 50% !important;
+  max-height: 50%;
   height: auto;
+  width: auto;
 }
 
 
