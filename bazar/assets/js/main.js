@@ -132,37 +132,37 @@
   });
 
   // Events carousel (uses the Owl Carousel library)
-  $(".events-carousel").owlCarousel({
-    autoplay: true,
-		autoplayTimeout:12000,
-    dots: true,
-    loop: true,
-    items: 1
-  });
+  // $(".events-carousel").owlCarousel({
+  //   autoplay: true,
+	// 	autoplayTimeout:12000,
+  //   dots: true,
+  //   loop: true,
+  //   items: 1
+  // });
 
   // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    autoplayTimeout: 100000,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      900: {
-        items: 3
-      }
-    }
-  });
+  // $(".testimonials-carousel").owlCarousel({
+  //   autoplay: true,
+  //   dots: true,
+  //   loop: true,
+  //   autoplayTimeout: 100000,
+  //   responsive: {
+  //     0: {
+  //       items: 1
+  //     },
+  //     768: {
+  //       items: 2
+  //     },
+  //     900: {
+  //       items: 3
+  //     }
+  //   }
+  // });
 
-  // Initiate venobox lightbox
-  $(document).ready(function() {
-    $('.venobox').venobox();
-  });
+  // // Initiate venobox lightbox
+  // $(document).ready(function() {
+  //   $('.venobox').venobox();
+  // });
 
   // Init AOS
   function aos_init() {
