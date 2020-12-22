@@ -115,13 +115,13 @@
 
   // Menu list isotope and filter
   $(window).on('load', function() {
-    var menuIsotope = $('.menu-container').isotope({
-      itemSelector: '.menu-item',
+    var menuIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item',
       layoutMode: 'fitRows'
     });
 
-    $('#menu-flters li').on('click', function() {
-      $("#menu-flters li").removeClass('filter-active');
+    $('#portfolio-flters li').on('click', function() {
+      $("#portfolio-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
       menuIsotope.isotope({
@@ -167,8 +167,10 @@
   // Init AOS
   function aos_init() {
     AOS.init({
-      duration: 30000,
-      once: true
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
     });
   }
   $(window).on('load', function() {
