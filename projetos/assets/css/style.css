@@ -216,5 +216,9 @@ box-shadow: -5px 10px 15px 0px rgba(0,0,0,0.4);
 		font-size:0.75em;
 	}
 
+  #footer .footer-top .row p, #footer .footer-top .row p {
+    font-size: 14px ;
+  }
+  
 
 }

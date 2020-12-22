@@ -440,14 +440,14 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   position: relative;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -583,6 +583,7 @@ section {
 .about .container {
   position: relative;
   z-index: 10;
+  margin-top: 50px;
 }
 
 .about .content {
@@ -1274,7 +1275,7 @@ section {
   color: #444444;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 20px 0 30px 0;
+  padding: 35px 0 50px 0;
   border-radius: 4px;
 }
 
@@ -2248,4 +2249,52 @@ text-align: left;
   }
   
   
+}
+
+
+  
+@media (max-width: 480px) {
+	.about .container {
+		padding: 0 30px;
+	}
+
+#hero h1 {
+  font-size: 2.25em;
+  
+}
+
+.section-title h2 {
+ font-size: 1.75em;
+  
+}
+
+h3, h4 {
+	font-size: 1.32em;
+}
+
+.events .event-item h3 {
+	font-size: 1.32em;
+}
+	p { 
+		font-size:0.75em;
+	}
+
+.col-form-label, .mb-3, .contact .php-email-form button[type="submit"] {
+    font-size: 0.75em;
+}
+
+.about li {
+    font-size: 0.75em;
+}
+.contact .php-email-form input, .contact .php-email-form textarea, .form-control {
+    font-size: 0.7em !important;
+		max-width: 260px;
+    margin: 0 auto;
+}
+
+#footer .footer-top .row p, #footer .footer-top .row p {
+  font-size: 14px ;
+}
+
+
 }

@@ -134,7 +134,12 @@ h3 {
 
 p { 
 		font-size:0.75em;
-	}
+  }
+  
+  #footer .footer-top .row p, #footer .footer-top .row p {
+    font-size: 14px ;
+  }
+  
 
 }
 
